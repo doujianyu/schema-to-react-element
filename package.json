@@ -1,0 +1,43 @@
+{
+  "name": "schema-to-react-element",
+  "version": "1.0.0",
+  "description": "Convert structure data to react element",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
+  "scripts": {
+    "start": "mpc start",
+    "build": "mpc build",
+    "release": "mpc publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doujianyu/schema-to-react-element.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doujianyu/schema-to-react-element/issues"
+  },
+  "homepage": "https://github.com/doujianyu/schema-to-react-element#readme",
+  "keywords": [
+    "react",
+    "schema",
+    "element",
+    "react-element",
+    "transformation"
+  ],
+  "author": "doujianyu",
+  "license": "MIT",
+  "devDependencies": {
+    "@mini-npm-cli/cli": "^0.0.11",
+    "@mini-npm-cli/plugin-rollup": "^0.0.11",
+    "@types/node": "^16.11.10",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  }
+}

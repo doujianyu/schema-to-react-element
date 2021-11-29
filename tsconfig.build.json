@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "declarationDir": "./dist/types/" // 类型声明文件的输出目录
+  },
+  "include": ["src/"],
+  "exclude": ["node_modules"]
+}

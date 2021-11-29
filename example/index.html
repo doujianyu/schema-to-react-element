@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo</title>
+  <link href="https://cdn.bootcdn.net/ajax/libs/antd/4.16.9/antd.min.css" rel="stylesheet">
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/antd/4.16.9/antd.js"></script>
+  <script src="http://localhost:8080/index.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script>
+    console.log(SchemaToReactElement);
+    const ins = new SchemaToReactElement.default({
+      uiLib: antd
+    });
+    const sc = [
+      {
+        baseType: "div",
+        props: {
+          className: 'div'
+        },
+        children: [
+          {
+            baseType: 'span',
+            props: {
+              className: 'span'
+            },
+            children: '123'
+          }
+        ]
+      },
+      {
+        baseType: 'Input',
+        props: {
+          placeholder: '请输入。。。'
+        }
+      }
+    ]
+    const rDom = ins.schemaToReactElement(sc)
+
+    ReactDOM.render(rDom, document.querySelector('#app'))
+  </script>
+</body>
+
+</html>
