@@ -1,9 +1,10 @@
 {
   "name": "schema-to-react-element",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert structure data to react element",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
+  "typings": "./dist/types/index.d.ts",
   "scripts": {
     "start": "mpc start",
     "build": "mpc build",
