@@ -1,6 +1,6 @@
 {
   "name": "schema-to-react-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert structure data to react element",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
@@ -23,6 +23,9 @@
     "element",
     "react-element",
     "transformation"
+  ],
+  "files": [
+    "./dist/*"
   ],
   "author": "doujianyu",
   "license": "MIT",
